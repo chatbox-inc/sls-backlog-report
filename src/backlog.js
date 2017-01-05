@@ -57,7 +57,8 @@ class Backlog{
             }
         })
 
-        let template = `全体の課題 ${count} 件\n`
+        let template = "おはようございます！\n本日の課題状況の一覧をお知らせします。\n"
+        template += `全体の課題 ${count} 件\n`
         Object.keys(users).forEach((key)=>{
             template += `${key} さんの担当課題 ${users[key].count}件 期限切れ ${users[key].important}件\n`
         })
@@ -87,7 +88,7 @@ https://chatboxinc.backlog.jp/find/CHATBOX
 
                 sns.publish({
                     Message,
-                    Subject: "SLS BACKLOG WEBHOOK APPLICATION",
+                    Subject: "SLS BACKLOG REPORT APPLICATION",
                     TopicArn
                 }, done)
             }else{

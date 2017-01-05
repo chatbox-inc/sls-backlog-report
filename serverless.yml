@@ -61,7 +61,7 @@ functions:
   chatbox:
     handler: handler.chatbox
     events:
-      - schedule: cron(50 9 ? * 2-7 *)
+      - schedule: cron(50 0 ? * 2-7 *)
 
 # you can add CloudFormation resource templates here
 #resources:
