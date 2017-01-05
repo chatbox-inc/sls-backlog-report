@@ -1,6 +1,6 @@
 'use strict';
 const Backlog = require("./src/backlog")
-import Report from "./src/backlogReport"
+import Report from "./src/BacklogReport"
 
 const topicArn = process.env.SLS_TOPICARN
 
