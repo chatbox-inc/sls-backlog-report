@@ -58,18 +58,10 @@ custom:
 
 
 functions:
-  general:
-    handler: handler.general
-    events:
-      - http:
-          path: sbw/general
-          method: post
   chatbox:
     handler: handler.chatbox
     events:
-      - http:
-          path: sbw/chatbox
-          method: post
+      - schedule: cron(50 9 ? * 2-7 *)
 
 # you can add CloudFormation resource templates here
 #resources:

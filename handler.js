@@ -4,8 +4,8 @@ import Report from "./src/backlogReport"
 
 const topicArn = process.env.SLS_TOPICARN
 
-module.exports.general = (event, context, cb)=>{
-    const backlog = new Backlog(topicArn,"#excom")
+module.exports.chatbox = (event, context, cb)=>{
+    const backlog = new Backlog(topicArn,"#chatbox")
     const report = new Report(
         process.env.SLS_BL_ROOMKEY,
         process.env.SLS_BL_APIKEY,
