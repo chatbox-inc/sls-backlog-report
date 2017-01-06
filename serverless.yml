@@ -18,6 +18,9 @@ provider:
   runtime: nodejs4.3
   environment:
     SLS_TOPICARN: ${env:SLS_TOPICARN}
+    SLS_BL_PROJECTID: ${env:SLS_PROJECTID}
+    SLS_BL_ROOMKEY: ${env:SLS_BL_ROOMKEY}
+    SLS_BL_APIKEY: ${env:SLS_BL_APIKEY}
   iamRoleStatements:
     - Effect: Allow
       Action:
